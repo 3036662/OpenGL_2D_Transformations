@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GL_Lab2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/GL_Lab2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="/home/aleh/CodeBlocks_projects/GL_Lab2/" />
+				</Compiler>
+				<Linker>
+					<Add option="-lglfw3 -ldl -lX11 -lpthread -lm -lXrandr -lXi" />
+					<Add library="lib/libglfw3.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/GL_Lab2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+					<Add directory="../GL_Lab2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lglfw3 -ldl -lX11 -lpthread -lm -lXrandr -lXi" />
+					<Add library="lib/libglfw3.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="constants.h" />
+		<Unit filename="glad.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="include/font_arial.hpp" />
+		<Unit filename="include/imgui/imconfig.h" />
+		<Unit filename="include/imgui/imgui.cpp" />
+		<Unit filename="include/imgui/imgui.h" />
+		<Unit filename="include/imgui/imgui_draw.cpp" />
+		<Unit filename="include/imgui/imgui_impl_glfw.cpp" />
+		<Unit filename="include/imgui/imgui_impl_glfw.h" />
+		<Unit filename="include/imgui/imgui_impl_opengl3.cpp" />
+		<Unit filename="include/imgui/imgui_impl_opengl3.h" />
+		<Unit filename="include/imgui/imgui_impl_opengl3_loader.h" />
+		<Unit filename="include/imgui/imgui_internal.h" />
+		<Unit filename="include/imgui/imgui_tables.cpp" />
+		<Unit filename="include/imgui/imgui_widgets.cpp" />
+		<Unit filename="include/imgui/imstb_rectpack.h" />
+		<Unit filename="include/imgui/imstb_textedit.h" />
+		<Unit filename="include/imgui/imstb_truetype.h" />
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
